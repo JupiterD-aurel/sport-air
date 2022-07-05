@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    background-color: #333333;
+}
+
+body {
+    background: FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+   justify-content: space-around;
+    box-shadow: 0px 5px 10px 0px #A8ACAE;
+    border-bottom: 0px solid #4d4646;
+    background-color: white;
+    z-index: 50;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    border-bottom: 1px solid black;
+}
+.onglets{
+    font-family:'spartan', sans-serif ;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.onglet {
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.onglet a {
+margin:0px 70px ;    
+}
+
+.logo img{
+width: 80px;
+height: auto;
+margin-left: 3rem;
+margin-top: 8px;
+}
+
+.login img{
+    display:flex;
+    width: 60px;
+    height: auto;
+    margin-left: 33px;
+    padding-top: 10px;
+}
+
+.login{
+    font-size: 0.8em;
+    align-self: center;
+}
+
+nav h2 {
+    font-family:'spartan', sans-serif ;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+}
+.conteneur1{
+    overflow: hidden;
+    max-width: 960px;
+    margin: 50px auto;
+}
+.d1{
+    width: 2160px;
+    height: 720px;
+    background-color: #EDEDED;
+    background-image: url("Images/Image_1.jpg"), url("Images/Image_2.jpg"), url("Images/Image_3.jpg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain;
+    animation: defilement1 15s linear infinite;
+    
+}
+
+.text{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+img{
+    max-width:100%
+    
+    }
+
+    .conteneut-slideshow{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    
+    
+    .slideshow{
+    background: orange;
+    border: 5px solid black;
+    box-shadow: 0px 0px 3px 4px rgb(104, 103, 103);
+    overflow: hidden;
+    max-width: 600px;
+    margin: 2rem auto;
+    position: relative;
+    
+    }
+        
+    .slideshow ul{
+    padding-bottom: 66.67%; /* ratio pour le responsive */
+    margin: 0;
+    list-style-type: none;
+    position: relative
+    }
+        
+        
+    .slideshow li{
+    
+    top: 0;
+    left: 0;
+    animation: slideshow 25s ease infinite;
+    position: absolute;
+    opacity: 0;
+    
+    
+    }
+    
+        
+    
+    .slideshow li:nth-child(2){
+    
+    animation-delay: 5s
+    
+    }
+    
+    .slideshow li:nth-child(3){
+    
+    animation-delay: 10s
+    
+    }
+    
+    .slideshow li:nth-child(4){
+    
+    animation-delay: 15s
+    
+    }
+    
+    .slideshow li:nth-child(5){
+    
+    animation-delay: 20s
+    
+    }
+    
+        
+    @keyframes slideshow{
+        
+    0%{opacity: 0}
+    
+    10%{opacity: 1}
+    
+    20%{opacity: 1}
+    
+    25%{opacity: 0}
+    
+    100%{opacity: 0}
+        
+        } 
+    
+        
+    .slideshow span{
+    
+    background: rgba(0,0,0,0.7);
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0
+    }
+
+    
+    
+    
+    .premier img {
+        opacity: 10;
+    }
+    
+    
+        
+    /*****barre progression *****/
+    .barre_progression{ 
+        
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    animation: barre_progression 25s ease-out infinite;
+        
+    }
+        
+    /*****animation barre progression *****/    
+    @keyframes barre_progression{
+        
+    0%,20%,40%,60%,80%,100%{width: 0%;opacity: 0}
+        
+    4%,24%,44%,64%,84%{width: 0%;opacity: .3}
+        
+    16%,36%,56%,76%,96%{width: 100%;opacity: .7}
+        
+    17%,37%,57%,77%,97%{width: 100%;opacity: .3}
+        
+    18%,38%,58%,78%,98%{width: 100%;opacity: 0}
+        
+        }
+@keyframes defilement1{
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-2000px,0);}
+}
+
+h3 {
+    font-family: 'spartan', sans-serif;
+    font-size: 90px;
+    text-align: center;
+    border-top: 3px solid #000;
+    border-bottom:  3px solid #000;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover {
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+}
+
+p {
+    font-family: 'spartan', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
